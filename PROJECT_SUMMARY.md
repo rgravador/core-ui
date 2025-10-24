@@ -1,13 +1,13 @@
-# Core UI - Project Summary
+# Foundy UI - Project Summary
 
 ## Overview
 
-Core UI is a modern, lightweight, and customizable UI component library built on top of Radix UI. It provides accessible, composable React components with TypeScript support and a delightful developer experience.
+Foundy UI is a modern, lightweight, and customizable UI component library built on top of Radix UI. It provides accessible, composable React components with TypeScript support and a delightful developer experience.
 
 ## Project Structure
 
 ```
-core-ui/
+foundy-ui/
 ├── .storybook/              # Storybook configuration
 │   ├── main.ts
 │   └── preview.ts
@@ -169,9 +169,9 @@ The library uses CSS variables for theming, making it easy to customize:
 - Bundled CSS (`style.css`)
 
 **Package Exports:**
-- Main entry: `core-ui`
-- Individual components: `core-ui/button`, `core-ui/input`, `core-ui/table`
-- Styles: `core-ui/style.css`
+- Main entry: `foundy-ui`
+- Individual components: `foundy-ui/button`, `foundy-ui/input`, `foundy-ui/table`
+- Styles: `foundy-ui/style.css`
 
 ## Scripts
 
@@ -259,7 +259,7 @@ npm login
 npm publish
 ```
 
-**Package Name:** `core-ui`
+**Package Name:** `foundy-ui`
 **Version:** 0.1.0
 **License:** MIT
 
@@ -317,4 +317,4 @@ npm publish
 
 ## Conclusion
 
-Core UI is a complete, production-ready component library that meets all requirements from the original specification. It provides a solid foundation for building accessible, beautiful React applications with minimal overhead and maximum flexibility.
+Foundy UI is a complete, production-ready component library that meets all requirements from the original specification. It provides a solid foundation for building accessible, beautiful React applications with minimal overhead and maximum flexibility.

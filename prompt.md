@@ -2,8 +2,8 @@
 
 ## Vibe Coding Prompt: Reusable UI Component Library with Radix UI
 
-**Project Name**: Core UI
-**Description**: Create a modern, lightweight, and customizable npm package called `core-ui` that provides a set of reusable UI components (buttons, inputs, tables, etc.) built on top of Radix UI. The package prioritizes accessibility, composability, and a delightful developer experience (DX), with TypeScript support, theming, and easy integration into React projects. Documentation must be built using **Storybook** to showcase components interactively.
+**Project Name**: Foundy UI
+**Description**: Create a modern, lightweight, and customizable npm package called `foundy-ui` that provides a set of reusable UI components (buttons, inputs, tables, etc.) built on top of Radix UI. The package prioritizes accessibility, composability, and a delightful developer experience (DX), with TypeScript support, theming, and easy integration into React projects. Documentation must be built using **Storybook** to showcase components interactively.
 
 ---
 
@@ -33,7 +33,7 @@ The package should include at least the following components:
 - **Styling**: Use **CSS-in-JS** (e.g., Emotion or Stitches) or plain CSS with CSS variables. Avoid heavy dependencies like Tailwind unless requested.
 - **Testing**: Include unit tests with **Vitest** or **Jest** for core components, focusing on rendering and accessibility.
 - **Package Structure**:
-core-ui/
+foundy-ui/
 ├── src/
 │   ├── components/
 │   │   ├── Button/
@@ -45,7 +45,7 @@ core-ui/
 ├── stories/
 ├── package.json
 ├── README.md
-- **Exports**: Support individual component imports (e.g., `core-ui/button`) and a single entry point (`core-ui`).
+- **Exports**: Support individual component imports (e.g., `foundy-ui/button`) and a single entry point (`foundy-ui`).
 
 ### 5. Vibe
 - The package should feel **modern**, **minimal**, and **developer-friendly**.
@@ -55,8 +55,8 @@ core-ui/
 
 ### 6. Example Usage
 ```tsx
-import { Button, Input, Table } from 'core-ui';
-import 'core-ui/style.css';
+import { Button, Input, Table } from 'foundy-ui';
+import 'foundy-ui/style.css';
 
 const MyApp = () => (
 <div>
@@ -444,8 +444,8 @@ Support a responsiveMode prop for card-based layouts on mobile.
 
 Example Usage
 ```tsx
-import { Table } from 'core-ui';
-import 'core-ui/style.css';
+import { Table } from 'foundy-ui';
+import 'foundy-ui/style.css';
 
 interface User {
   id: number;

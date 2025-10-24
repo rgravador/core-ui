@@ -1,6 +1,6 @@
-# Core UI
+# Foundy UI
 
-A modern, lightweight, and customizable UI component library built on top of Radix UI. Core UI provides accessible, composable components with TypeScript support and a delightful developer experience.
+A modern, lightweight, and customizable UI component library built on top of Radix UI. Foundy UI provides accessible, composable components with TypeScript support and a delightful developer experience.
 
 ## Features
 
@@ -14,11 +14,11 @@ A modern, lightweight, and customizable UI component library built on top of Rad
 ## Installation
 
 ```bash
-npm install core-ui
+npm install foundy-ui
 # or
-yarn add core-ui
+yarn add foundy-ui
 # or
-pnpm add core-ui
+pnpm add foundy-ui
 ```
 
 ## Usage
@@ -26,8 +26,8 @@ pnpm add core-ui
 Import the components and styles:
 
 ```tsx
-import { Button, Input, Table } from 'core-ui';
-import 'core-ui/style.css';
+import { Button, Input, Table } from 'foundy-ui';
+import 'foundy-ui/style.css';
 
 function App() {
   return (
@@ -46,9 +46,9 @@ function App() {
 You can also import components individually to reduce bundle size:
 
 ```tsx
-import { Button } from 'core-ui/button';
-import { Input } from 'core-ui/input';
-import { Table } from 'core-ui/table';
+import { Button } from 'foundy-ui/button';
+import { Input } from 'foundy-ui/input';
+import { Table } from 'foundy-ui/table';
 ```
 
 ## Components
@@ -58,7 +58,7 @@ import { Table } from 'core-ui/table';
 A customizable button component with multiple variants, sizes, and states.
 
 ```tsx
-import { Button } from 'core-ui';
+import { Button } from 'foundy-ui';
 
 // Variants
 <Button variant="primary">Primary</Button>
@@ -95,7 +95,7 @@ import { Button } from 'core-ui';
 A flexible input component with support for labels, helper text, error states, and icons.
 
 ```tsx
-import { Input } from 'core-ui';
+import { Input } from 'foundy-ui';
 
 // Basic
 <Input placeholder="Enter text..." />
@@ -141,7 +141,7 @@ import { Input } from 'core-ui';
 A feature-rich table component with sorting, pagination, row selection, and custom rendering.
 
 ```tsx
-import { Table } from 'core-ui';
+import { Table } from 'foundy-ui';
 
 interface User {
   id: number;
@@ -212,7 +212,7 @@ interface Column<T> {
 
 ## Theming
 
-Core UI uses CSS variables for theming. You can customize the theme by overriding these variables:
+Foundy UI uses CSS variables for theming. You can customize the theme by overriding these variables:
 
 ```css
 :root {
@@ -239,7 +239,7 @@ Core UI uses CSS variables for theming. You can customize the theme by overridin
 Enable dark mode by setting the `data-theme` attribute:
 
 ```tsx
-import { applyTheme } from 'core-ui';
+import { applyTheme } from 'foundy-ui';
 
 // Apply dark theme
 applyTheme('dark');
@@ -280,7 +280,7 @@ npm run lint
 
 ## Browser Support
 
-Core UI supports all modern browsers:
+Foundy UI supports all modern browsers:
 - Chrome (last 2 versions)
 - Firefox (last 2 versions)
 - Safari (last 2 versions)
