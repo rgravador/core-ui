@@ -1,0 +1,118 @@
+.cui-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--cui-spacing-xs);
+  width: 100%;
+}
+
+.cui-input-label {
+  font-size: var(--cui-font-sm);
+  font-weight: var(--cui-font-medium);
+  color: var(--cui-text-primary);
+  margin-bottom: var(--cui-spacing-xs);
+}
+
+.cui-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cui-input {
+  width: 100%;
+  font-family: inherit;
+  font-size: var(--cui-font-md);
+  color: var(--cui-text-primary);
+  background-color: var(--cui-bg-primary);
+  border: 1px solid var(--cui-border-primary);
+  border-radius: var(--cui-radius-md);
+  transition: all var(--cui-transition-base);
+  outline: none;
+}
+
+.cui-input:hover:not(:disabled) {
+  border-color: var(--cui-border-secondary);
+}
+
+.cui-input:focus {
+  border-color: var(--cui-border-focus);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.cui-input::placeholder {
+  color: var(--cui-text-secondary);
+}
+
+.cui-input:disabled {
+  background-color: var(--cui-bg-disabled);
+  color: var(--cui-text-disabled);
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.cui-input--sm {
+  padding: var(--cui-spacing-sm) var(--cui-spacing-md);
+  font-size: var(--cui-font-sm);
+  height: 2rem;
+}
+
+.cui-input--md {
+  padding: var(--cui-spacing-md) var(--cui-spacing-lg);
+  font-size: var(--cui-font-md);
+  height: 2.5rem;
+}
+
+.cui-input--lg {
+  padding: var(--cui-spacing-md) var(--cui-spacing-xl);
+  font-size: var(--cui-font-lg);
+  height: 3rem;
+}
+
+/* With icons */
+.cui-input--with-left-icon {
+  padding-left: 2.5rem;
+}
+
+.cui-input--with-right-icon {
+  padding-right: 2.5rem;
+}
+
+.cui-input__icon-left,
+.cui-input__icon-right {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cui-text-secondary);
+  pointer-events: none;
+}
+
+.cui-input__icon-left {
+  left: var(--cui-spacing-md);
+}
+
+.cui-input__icon-right {
+  right: var(--cui-spacing-md);
+}
+
+/* Error state */
+.cui-input--error {
+  border-color: var(--cui-border-error);
+}
+
+.cui-input--error:focus {
+  border-color: var(--cui-border-error);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.cui-input-error {
+  font-size: var(--cui-font-sm);
+  color: var(--cui-danger);
+  margin-top: var(--cui-spacing-xs);
+}
+
+.cui-input-helper {
+  font-size: var(--cui-font-sm);
+  color: var(--cui-text-secondary);
+  margin-top: var(--cui-spacing-xs);
+}
