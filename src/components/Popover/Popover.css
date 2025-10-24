@@ -1,0 +1,25 @@
+.cui-popover__content {
+  border-radius: 4px;
+  padding: 20px;
+  width: 260px;
+  background-color: white;
+  box-shadow: 0 10px 38px -10px rgba(0, 0, 0, 0.35), 0 10px 20px -15px rgba(0, 0, 0, 0.2);
+  animation: scaleIn 150ms ease-out;
+  will-change: transform, opacity;
+  z-index: 1000;
+}
+
+.cui-popover__content:focus {
+  outline: none;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

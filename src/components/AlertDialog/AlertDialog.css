@@ -1,0 +1,108 @@
+.cui-alert-dialog__overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1000;
+}
+
+.cui-alert-dialog__content {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 10px 38px -10px rgba(0, 0, 0, 0.35), 0 10px 20px -15px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  max-width: 500px;
+  max-height: 85vh;
+  padding: 25px;
+  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1001;
+}
+
+.cui-alert-dialog__content:focus {
+  outline: none;
+}
+
+.cui-alert-dialog__title {
+  margin: 0;
+  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cui-alert-dialog__description {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.cui-alert-dialog__action,
+.cui-alert-dialog__cancel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cui-alert-dialog__action {
+  background-color: #dc2626;
+  color: white;
+  margin-left: 10px;
+}
+
+.cui-alert-dialog__action:hover {
+  background-color: #b91c1c;
+}
+
+.cui-alert-dialog__action:focus {
+  outline: 2px solid #dc2626;
+  outline-offset: 2px;
+}
+
+.cui-alert-dialog__cancel {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.cui-alert-dialog__cancel:hover {
+  background-color: #e5e5e5;
+}
+
+.cui-alert-dialog__cancel:focus {
+  outline: 2px solid #0066ff;
+  outline-offset: 2px;
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

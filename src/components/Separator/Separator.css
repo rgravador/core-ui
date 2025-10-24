@@ -1,0 +1,13 @@
+.cui-separator {
+  background-color: #e5e5e5;
+}
+
+.cui-separator[data-orientation='horizontal'] {
+  height: 1px;
+  width: 100%;
+}
+
+.cui-separator[data-orientation='vertical'] {
+  height: 100%;
+  width: 1px;
+}
