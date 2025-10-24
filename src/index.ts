@@ -102,6 +102,11 @@ export type {
 export { HoverCard, HoverCardTrigger, HoverCardContent } from './components/HoverCard';
 export type { HoverCardContentProps } from './components/HoverCard';
 
+// Icon
+export { Icon } from './components/Icon';
+export type { IconProps, IconName } from './components/Icon';
+export * from '@radix-ui/react-icons';
+
 // Input
 export { Input } from './components/Input';
 export type { InputProps, InputSize } from './components/Input';
